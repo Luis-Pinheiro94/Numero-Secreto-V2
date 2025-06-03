@@ -1,7 +1,7 @@
 let listadeNumerosSorteados = []
-let numeroLimite = 10
-let numeroSecreto = gerarNumeroAleatorio ()
-let tentativas = 1
+let numeroLimite = 100;
+let numeroSecreto = gerarNumeroAleatorio ();
+let tentativas = 1;
 
 function exibirTextoNaTela(tag, texto){
     let campo = document.querySelector(tag);
@@ -57,8 +57,8 @@ function gerarNumeroAleatorio () {
         return gerarNumeroAleatorio ();
     }else {
         listadeNumerosSorteados.push(numeroEscolhido);
-        console.log(listadeNumerosSorteados)
-        return numeroEscolhido
+        console.log(listadeNumerosSorteados);
+        return numeroEscolhido;
     }
 }
 
@@ -72,5 +72,5 @@ function reiniciarjogo() {
     limparCampo ();
     tentativas = 1;
     exibirMensagemInicial ();
-    document.getElementById("reiniciar").setAttribute("disabled", true)
+    document.getElementById("reiniciar").setAttribute("disabled", true);
 }
